@@ -1,0 +1,6 @@
+framework module BuckarooBanzai {
+  umbrella header "BuckarooBanzai-umbrella.h"
+
+  export *
+  module * { export * }
+}

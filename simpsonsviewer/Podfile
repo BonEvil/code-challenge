@@ -1,0 +1,12 @@
+source 'https://github.com/BonEvil/ios-specs.git'
+platform :ios, '15.0'
+
+target 'simpsonsviewer' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for simpsonsviewer
+  pod 'BuckarooBanzai', '0.5.1'
+  pod 'CharacterViewer', :path => "../characterviewer"
+  
+end

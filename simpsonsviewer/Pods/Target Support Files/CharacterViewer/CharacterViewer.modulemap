@@ -1,0 +1,6 @@
+framework module CharacterViewer {
+  umbrella header "CharacterViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}

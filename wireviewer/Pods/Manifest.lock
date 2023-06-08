@@ -1,0 +1,24 @@
+PODS:
+  - BuckarooBanzai (0.5.1)
+  - CharacterViewer (0.0.1):
+    - BuckarooBanzai (= 0.5.1)
+
+DEPENDENCIES:
+  - BuckarooBanzai (= 0.5.1)
+  - CharacterViewer (from `../characterviewer`)
+
+SPEC REPOS:
+  https://github.com/BonEvil/ios-specs.git:
+    - BuckarooBanzai
+
+EXTERNAL SOURCES:
+  CharacterViewer:
+    :path: "../characterviewer"
+
+SPEC CHECKSUMS:
+  BuckarooBanzai: 22029a6f66ec6407706972763743bec5c7b60224
+  CharacterViewer: 3bc803eadb0c699e17572b8921d9b538d1810319
+
+PODFILE CHECKSUM: f9532e49f448f26482cfe938c7c186f063723fe8
+
+COCOAPODS: 1.11.3

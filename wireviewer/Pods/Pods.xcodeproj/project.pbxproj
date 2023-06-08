@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01AAB021C1D490DD15A2D667A8B6A5A8 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B205C7A6EA281C9E646CE3B316A5B3 /* CharacterService.swift */; };
+		048C57B266DB3C358998061829E47E19 /* HTTPContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBD74196CDAC2E4FFCC6192729FBBB /* HTTPContentType.swift */; };
+		0A781FCFDD725B8A0CFA6351ACB04110 /* BuckarooBanzai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE0D459779D82190580BE9E9BEE83F /* BuckarooBanzai.swift */; };
+		25B44428939B343A0326360AE24CE5C3 /* CharacterDetailViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 59899ECD72EC0E427297C6EBAFB65AF7 /* CharacterDetailViewController.xib */; };
+		2B44C9D2DEF374CEDE1BAE933C25B641 /* BuckarooBanzai-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE272C487D10B367C476AE3D6EEB5CE /* BuckarooBanzai-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30558E1CFCB6F555845315C0F4F1733D /* JSONRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE32A5973E1735393EC015BE429C19 /* JSONRequestSerializer.swift */; };
+		31F692060FB58572D1EB722606CBD97C /* Pods-wireviewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 798439DD8D5297427DC092CA2DBF3C14 /* Pods-wireviewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EFC27135C7A114399B93EC7B47E094 /* SplitViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFF29025C42CBFC558BB44D1981C88 /* SplitViewController.xib */; };
+		609BED004A5C1DF65B6E12F3189001A3 /* FormRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24888F0F82FCC55204E338F900F17183 /* FormRequestSerializer.swift */; };
+		650C7221B2BA3A74C5EDC788F3808FE6 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1A1ACB9406EDDA65C0B047293169C /* CharacterListViewController.swift */; };
+		6F569422AAA6D584DCE4EAE3F37C5E1D /* BuckarooBanzai.h in Headers */ = {isa = PBXBuildFile; fileRef = 7772EF300C1512E8E55E3DAF4B851364 /* BuckarooBanzai.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89304E45D39B96C6D82EF5B7EDF16DB6 /* HTTPAcceptType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B9A6154713A194F105F5E7BB9B9C3 /* HTTPAcceptType.swift */; };
+		8A5B778046A9A29730BE7861DA68B0E1 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A3880EEC3AAAA696F0F6EFEDA52FFC /* SplitViewController.swift */; };
+		92F409760B38EA8BCD19293CBEEFADFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A444F17D0E933A2019F15C30DC6F959E /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ADD59196882C867018A0735A0B4BCC /* CharacterDetailViewController.swift */; };
+		A6A41903682FD3E086E2A353D347146B /* CharacterViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0DF3BDBAD25DADB908099E7426933 /* CharacterViewer.swift */; };
+		B71EED7AE726ADDD5F35250318046782 /* BBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FB3C21A0894EA667A1D858217B77 /* BBError.swift */; };
+		C87044155D13655844E16219F51D5656 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9608ACC071EED950897572F35219B42 /* Service.swift */; };
+		D491DD68F2218C0358697FE7154F3EDA /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F007984AA4A9690F903B30AE05B038 /* Character.swift */; };
+		D9D05FC18D46DFDDB50BB19EE6EA9FB5 /* CharacterListViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4AFFBCDA4B2EE766A365268E8DDC23A0 /* CharacterListViewController.xib */; };
+		DE83B6109BE0B95CF00998B2AF72CBBD /* BuckarooBanzai-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D68D2B92B5BDB8FDC4722CF491F4ED /* BuckarooBanzai-dummy.m */; };
+		DF669620718AF7892941B9A97601DCFC /* HTTPResponse+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A31207AA3B0DB2F752CB9C2FB4721 /* HTTPResponse+ext.swift */; };
+		DF8E1D034B8DB4B67243BFF15B3F9FFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DFCAA84710B300E9334CCE8F7BF8FA90 /* characterviewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0449BB0D81743576FA5CEBDDDA80A8CE /* characterviewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E098C4F224ADC23C331DE09FB12F46EC /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74C011A54ADD4B88726A70D61703939 /* HTTPResponse.swift */; };
+		E51A548309948A3BBA5CE148C6318F5A /* Pods-wireviewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFE2B266E5103EA52E51EF88C0CC2C /* Pods-wireviewer-dummy.m */; };
+		E5EE2C9AB33A73D5307140669E3DD353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E74911B83CB6B62B7382A35659284358 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3281CC3640F642DDE09AA6C98E78D /* HTTPRequestMethod.swift */; };
+		EEF3719707D1035D4B284F29A1DEA8C0 /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8AC438BEED03C51DECC44A879B8917 /* RequestSerializer.swift */; };
+		F12EFFC9F673BEFCB6A8270A6F19B689 /* CharacterViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDECE57DE37E781F3D32C4C6EADE1FF0 /* CharacterViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FADDD16F9A06DC5D8EF49AF3A3324EAE /* CharacterViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD81CC2383610297FD3DABDDE472AC7C /* CharacterViewer-dummy.m */; };
+		FDAA6B157F4E73BAE00735FBD417DBCF /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA7C1B313B35A6B517A96AA8397D22F /* CharacterResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45BA18378CD2EBF1ABF5F06DC27E4B02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4B2FAF9959C80641944CD4EE69B505B;
+			remoteInfo = CharacterViewer;
+		};
+		4CB44007FD2F2EC02C215B711A377AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515F9B834A112BCA850AB763BFAD7B05;
+			remoteInfo = BuckarooBanzai;
+		};
+		605E3533B66641BCDB0BA79A81073C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515F9B834A112BCA850AB763BFAD7B05;
+			remoteInfo = BuckarooBanzai;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0449BB0D81743576FA5CEBDDDA80A8CE /* characterviewer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = characterviewer.h; path = characterviewer/characterviewer.h; sourceTree = "<group>"; };
+		10A5B207B05110AF53C924DF60635B16 /* CharacterViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CharacterViewer.debug.xcconfig; sourceTree = "<group>"; };
+		16CBAA63F5A1A17B0FBE389F29EAB913 /* Pods-wireviewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wireviewer.debug.xcconfig"; sourceTree = "<group>"; };
+		18CFC4C8EC1B0CBEBAFD11B4F424135E /* Pods-wireviewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wireviewer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A9E2E13F267922302D13A08A0324CE7 /* BuckarooBanzai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BuckarooBanzai.debug.xcconfig; sourceTree = "<group>"; };
+		1F8FEEE91BC8009516C1CC953DE04A90 /* BuckarooBanzai */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BuckarooBanzai; path = BuckarooBanzai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24888F0F82FCC55204E338F900F17183 /* FormRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormRequestSerializer.swift; path = BuckarooBanzai/Serializers/FormRequestSerializer.swift; sourceTree = "<group>"; };
+		2F94EA0EE4C94E42ACB56C9506EA60BC /* BuckarooBanzai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BuckarooBanzai.release.xcconfig; sourceTree = "<group>"; };
+		37C6FB3C21A0894EA667A1D858217B77 /* BBError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BBError.swift; path = BuckarooBanzai/Enumerations/BBError.swift; sourceTree = "<group>"; };
+		3DCEE6E32F91502843302DB3784F1427 /* Pods-wireviewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wireviewer.release.xcconfig"; sourceTree = "<group>"; };
+		3FBFF29025C42CBFC558BB44D1981C88 /* SplitViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SplitViewController.xib; sourceTree = "<group>"; };
+		44F25762C874CCF0CE553458F09DD8F4 /* Pods-wireviewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wireviewer.modulemap"; sourceTree = "<group>"; };
+		45EBD74196CDAC2E4FFCC6192729FBBB /* HTTPContentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPContentType.swift; path = BuckarooBanzai/Enumerations/HTTPContentType.swift; sourceTree = "<group>"; };
+		4AFFBCDA4B2EE766A365268E8DDC23A0 /* CharacterListViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CharacterListViewController.xib; sourceTree = "<group>"; };
+		4EE1A1ACB9406EDDA65C0B047293169C /* CharacterListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		54A3880EEC3AAAA696F0F6EFEDA52FFC /* SplitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		59899ECD72EC0E427297C6EBAFB65AF7 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
+		59B205C7A6EA281C9E646CE3B316A5B3 /* CharacterService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		5EA7C1B313B35A6B517A96AA8397D22F /* CharacterResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		61DE0D459779D82190580BE9E9BEE83F /* BuckarooBanzai.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuckarooBanzai.swift; path = BuckarooBanzai/BuckarooBanzai.swift; sourceTree = "<group>"; };
+		63ADD59196882C867018A0735A0B4BCC /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7772EF300C1512E8E55E3DAF4B851364 /* BuckarooBanzai.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BuckarooBanzai.h; path = BuckarooBanzai/BuckarooBanzai.h; sourceTree = "<group>"; };
+		78E08BF0769E4E7C6CD8CE087F04F118 /* CharacterViewer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CharacterViewer; path = CharacterViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		798439DD8D5297427DC092CA2DBF3C14 /* Pods-wireviewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wireviewer-umbrella.h"; sourceTree = "<group>"; };
+		7CC0DF3BDBAD25DADB908099E7426933 /* CharacterViewer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterViewer.swift; path = characterviewer/CharacterViewer.swift; sourceTree = "<group>"; };
+		7ED9C58994DE0AAA1B7BDA43D3C27505 /* BuckarooBanzai.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BuckarooBanzai.modulemap; sourceTree = "<group>"; };
+		8448FA66053432DE9D9F8557F4DB62CE /* BuckarooBanzai-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BuckarooBanzai-prefix.pch"; sourceTree = "<group>"; };
+		8F96DF315C9BD0FDFC48D52C227121C4 /* Pods-wireviewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wireviewer-acknowledgements.plist"; sourceTree = "<group>"; };
+		92C3281CC3640F642DDE09AA6C98E78D /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRequestMethod.swift; path = BuckarooBanzai/Enumerations/HTTPRequestMethod.swift; sourceTree = "<group>"; };
+		95227E25844233F131202DA6B8DDE25E /* CharacterViewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CharacterViewer-Info.plist"; sourceTree = "<group>"; };
+		98D21D7BACB9DDAD553DC64DE31CBA29 /* Pods-wireviewer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-wireviewer"; path = Pods_wireviewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E8AC438BEED03C51DECC44A879B8917 /* RequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestSerializer.swift; path = BuckarooBanzai/Protocols/RequestSerializer.swift; sourceTree = "<group>"; };
+		9EE272C487D10B367C476AE3D6EEB5CE /* BuckarooBanzai-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BuckarooBanzai-umbrella.h"; sourceTree = "<group>"; };
+		A9608ACC071EED950897572F35219B42 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = BuckarooBanzai/Protocols/Service.swift; sourceTree = "<group>"; };
+		AA9B9A6154713A194F105F5E7BB9B9C3 /* HTTPAcceptType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPAcceptType.swift; path = BuckarooBanzai/Enumerations/HTTPAcceptType.swift; sourceTree = "<group>"; };
+		AD81CC2383610297FD3DABDDE472AC7C /* CharacterViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CharacterViewer-dummy.m"; sourceTree = "<group>"; };
+		B24A86C44253C17C2349084C573D35D3 /* CharacterViewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CharacterViewer-prefix.pch"; sourceTree = "<group>"; };
+		BF4D10FE9CD4EB0CB6B7C78D6CE613EB /* CharacterViewer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CharacterViewer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C681D554B6A114E1A871A45664B67C20 /* BuckarooBanzai-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BuckarooBanzai-Info.plist"; sourceTree = "<group>"; };
+		C74C011A54ADD4B88726A70D61703939 /* HTTPResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPResponse.swift; path = "BuckarooBanzai/Data Structs/HTTPResponse.swift"; sourceTree = "<group>"; };
+		CA66760EF2AF65DEE2159A784EA4937B /* Pods-wireviewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wireviewer-frameworks.sh"; sourceTree = "<group>"; };
+		DAAE32A5973E1735393EC015BE429C19 /* JSONRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONRequestSerializer.swift; path = BuckarooBanzai/Serializers/JSONRequestSerializer.swift; sourceTree = "<group>"; };
+		E4AB5A85AB3A8A692D2FF23124B9352E /* CharacterViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CharacterViewer.modulemap; sourceTree = "<group>"; };
+		E5F007984AA4A9690F903B30AE05B038 /* Character.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		E6AC32D8CF53972815400A7C3917F9D5 /* CharacterViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CharacterViewer.release.xcconfig; sourceTree = "<group>"; };
+		E85A31207AA3B0DB2F752CB9C2FB4721 /* HTTPResponse+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HTTPResponse+ext.swift"; path = "BuckarooBanzai/Data Structs/HTTPResponse+ext.swift"; sourceTree = "<group>"; };
+		EAFFE2B266E5103EA52E51EF88C0CC2C /* Pods-wireviewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wireviewer-dummy.m"; sourceTree = "<group>"; };
+		EDECE57DE37E781F3D32C4C6EADE1FF0 /* CharacterViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CharacterViewer-umbrella.h"; sourceTree = "<group>"; };
+		EF8975A0B683ECEC823F59B0195F674A /* Pods-wireviewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wireviewer-Info.plist"; sourceTree = "<group>"; };
+		F5D68D2B92B5BDB8FDC4722CF491F4ED /* BuckarooBanzai-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BuckarooBanzai-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59074D1BF104E5FA00B08721BFE79948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F409760B38EA8BCD19293CBEEFADFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74473C9AC68DAE5C56C1AC13EC088DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EE2C9AB33A73D5307140669E3DD353 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859F7B6AB8EA675726A5F89BFEC633A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8E1D034B8DB4B67243BFF15B3F9FFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0022C2A2B6D58830B99D7C5FFD389E2A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				906B4F2FF8A031B3A48CB0D42A57FC71 /* Pods-wireviewer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2B86D1F3E0B490044005937509086D54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5F007984AA4A9690F903B30AE05B038 /* Character.swift */,
+				5EA7C1B313B35A6B517A96AA8397D22F /* CharacterResponse.swift */,
+			);
+			name = Models;
+			path = characterviewer/Models;
+			sourceTree = "<group>";
+		};
+		3478A2BB8BDC7B1D6863E8493D9674F8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BF4D10FE9CD4EB0CB6B7C78D6CE613EB /* CharacterViewer.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5240553A6A7FDDB1C04F3176C61485AB /* BuckarooBanzai */ = {
+			isa = PBXGroup;
+			children = (
+				37C6FB3C21A0894EA667A1D858217B77 /* BBError.swift */,
+				7772EF300C1512E8E55E3DAF4B851364 /* BuckarooBanzai.h */,
+				61DE0D459779D82190580BE9E9BEE83F /* BuckarooBanzai.swift */,
+				24888F0F82FCC55204E338F900F17183 /* FormRequestSerializer.swift */,
+				AA9B9A6154713A194F105F5E7BB9B9C3 /* HTTPAcceptType.swift */,
+				45EBD74196CDAC2E4FFCC6192729FBBB /* HTTPContentType.swift */,
+				92C3281CC3640F642DDE09AA6C98E78D /* HTTPRequestMethod.swift */,
+				C74C011A54ADD4B88726A70D61703939 /* HTTPResponse.swift */,
+				E85A31207AA3B0DB2F752CB9C2FB4721 /* HTTPResponse+ext.swift */,
+				DAAE32A5973E1735393EC015BE429C19 /* JSONRequestSerializer.swift */,
+				9E8AC438BEED03C51DECC44A879B8917 /* RequestSerializer.swift */,
+				A9608ACC071EED950897572F35219B42 /* Service.swift */,
+				A5D842BBD50E2B2DF7157EEE9E96A5CA /* Support Files */,
+			);
+			name = BuckarooBanzai;
+			path = BuckarooBanzai;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6776DFF4D158FC7D0B8D6B29EE126AA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8FEEE91BC8009516C1CC953DE04A90 /* BuckarooBanzai */,
+				78E08BF0769E4E7C6CD8CE087F04F118 /* CharacterViewer */,
+				98D21D7BACB9DDAD553DC64DE31CBA29 /* Pods-wireviewer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FEBCC6182EFD9A61EB78D6FAD46DF8D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AA86C652A553329BBB069D5256AE657 /* CharacterViewer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7D1C96B36A13C31CE2E13B47E15F7270 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				59B205C7A6EA281C9E646CE3B316A5B3 /* CharacterService.swift */,
+			);
+			name = Services;
+			path = characterviewer/Services;
+			sourceTree = "<group>";
+		};
+		868E73EA324DCDF64070A1FC5F798A0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4AB5A85AB3A8A692D2FF23124B9352E /* CharacterViewer.modulemap */,
+				AD81CC2383610297FD3DABDDE472AC7C /* CharacterViewer-dummy.m */,
+				95227E25844233F131202DA6B8DDE25E /* CharacterViewer-Info.plist */,
+				B24A86C44253C17C2349084C573D35D3 /* CharacterViewer-prefix.pch */,
+				EDECE57DE37E781F3D32C4C6EADE1FF0 /* CharacterViewer-umbrella.h */,
+				10A5B207B05110AF53C924DF60635B16 /* CharacterViewer.debug.xcconfig */,
+				E6AC32D8CF53972815400A7C3917F9D5 /* CharacterViewer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../wireviewer/Pods/Target Support Files/CharacterViewer";
+			sourceTree = "<group>";
+		};
+		906B4F2FF8A031B3A48CB0D42A57FC71 /* Pods-wireviewer */ = {
+			isa = PBXGroup;
+			children = (
+				44F25762C874CCF0CE553458F09DD8F4 /* Pods-wireviewer.modulemap */,
+				18CFC4C8EC1B0CBEBAFD11B4F424135E /* Pods-wireviewer-acknowledgements.markdown */,
+				8F96DF315C9BD0FDFC48D52C227121C4 /* Pods-wireviewer-acknowledgements.plist */,
+				EAFFE2B266E5103EA52E51EF88C0CC2C /* Pods-wireviewer-dummy.m */,
+				CA66760EF2AF65DEE2159A784EA4937B /* Pods-wireviewer-frameworks.sh */,
+				EF8975A0B683ECEC823F59B0195F674A /* Pods-wireviewer-Info.plist */,
+				798439DD8D5297427DC092CA2DBF3C14 /* Pods-wireviewer-umbrella.h */,
+				16CBAA63F5A1A17B0FBE389F29EAB913 /* Pods-wireviewer.debug.xcconfig */,
+				3DCEE6E32F91502843302DB3784F1427 /* Pods-wireviewer.release.xcconfig */,
+			);
+			name = "Pods-wireviewer";
+			path = "Target Support Files/Pods-wireviewer";
+			sourceTree = "<group>";
+		};
+		9AA86C652A553329BBB069D5256AE657 /* CharacterViewer */ = {
+			isa = PBXGroup;
+			children = (
+				0449BB0D81743576FA5CEBDDDA80A8CE /* characterviewer.h */,
+				7CC0DF3BDBAD25DADB908099E7426933 /* CharacterViewer.swift */,
+				2B86D1F3E0B490044005937509086D54 /* Models */,
+				3478A2BB8BDC7B1D6863E8493D9674F8 /* Pod */,
+				7D1C96B36A13C31CE2E13B47E15F7270 /* Services */,
+				868E73EA324DCDF64070A1FC5F798A0E /* Support Files */,
+				B50BCE84227240A902DC1957F3DF600A /* User Interface */,
+			);
+			name = CharacterViewer;
+			path = ../../characterviewer;
+			sourceTree = "<group>";
+		};
+		A5D842BBD50E2B2DF7157EEE9E96A5CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ED9C58994DE0AAA1B7BDA43D3C27505 /* BuckarooBanzai.modulemap */,
+				F5D68D2B92B5BDB8FDC4722CF491F4ED /* BuckarooBanzai-dummy.m */,
+				C681D554B6A114E1A871A45664B67C20 /* BuckarooBanzai-Info.plist */,
+				8448FA66053432DE9D9F8557F4DB62CE /* BuckarooBanzai-prefix.pch */,
+				9EE272C487D10B367C476AE3D6EEB5CE /* BuckarooBanzai-umbrella.h */,
+				1A9E2E13F267922302D13A08A0324CE7 /* BuckarooBanzai.debug.xcconfig */,
+				2F94EA0EE4C94E42ACB56C9506EA60BC /* BuckarooBanzai.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BuckarooBanzai";
+			sourceTree = "<group>";
+		};
+		B14FD0D38E82F23D6358FF3EFBACBA00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5240553A6A7FDDB1C04F3176C61485AB /* BuckarooBanzai */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B50BCE84227240A902DC1957F3DF600A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				63ADD59196882C867018A0735A0B4BCC /* CharacterDetailViewController.swift */,
+				59899ECD72EC0E427297C6EBAFB65AF7 /* CharacterDetailViewController.xib */,
+				4EE1A1ACB9406EDDA65C0B047293169C /* CharacterListViewController.swift */,
+				4AFFBCDA4B2EE766A365268E8DDC23A0 /* CharacterListViewController.xib */,
+				54A3880EEC3AAAA696F0F6EFEDA52FFC /* SplitViewController.swift */,
+				3FBFF29025C42CBFC558BB44D1981C88 /* SplitViewController.xib */,
+			);
+			name = "User Interface";
+			path = "characterviewer/User Interface";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6FEBCC6182EFD9A61EB78D6FAD46DF8D /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B14FD0D38E82F23D6358FF3EFBACBA00 /* Pods */,
+				6776DFF4D158FC7D0B8D6B29EE126AA5 /* Products */,
+				0022C2A2B6D58830B99D7C5FFD389E2A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		357507E5E8D25B3CD95A3E79A2794003 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F692060FB58572D1EB722606CBD97C /* Pods-wireviewer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41087AB37FE4D4A68D8AEE2AAAE56ACC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F569422AAA6D584DCE4EAE3F37C5E1D /* BuckarooBanzai.h in Headers */,
+				2B44C9D2DEF374CEDE1BAE933C25B641 /* BuckarooBanzai-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2265F0A4C63A1ABBC577EBCF68CE81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCAA84710B300E9334CCE8F7BF8FA90 /* characterviewer.h in Headers */,
+				F12EFFC9F673BEFCB6A8270A6F19B689 /* CharacterViewer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		301C52C5FE4E6591F3ACED9314311F29 /* Pods-wireviewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE417CD14EB0E2A4D7F28E1380A887C9 /* Build configuration list for PBXNativeTarget "Pods-wireviewer" */;
+			buildPhases = (
+				357507E5E8D25B3CD95A3E79A2794003 /* Headers */,
+				138FAA837FC6C9331DD01F037B06A4A2 /* Sources */,
+				74473C9AC68DAE5C56C1AC13EC088DED /* Frameworks */,
+				F44179D3618B78BE639CF8EF236EC338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E13C69D31C08E0851504374189289FF3 /* PBXTargetDependency */,
+				30F1901D4F0CA947A943EF57209DA183 /* PBXTargetDependency */,
+			);
+			name = "Pods-wireviewer";
+			productName = Pods_wireviewer;
+			productReference = 98D21D7BACB9DDAD553DC64DE31CBA29 /* Pods-wireviewer */;
+			productType = "com.apple.product-type.framework";
+		};
+		515F9B834A112BCA850AB763BFAD7B05 /* BuckarooBanzai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC095A689DE20BC21516DAD6087767C /* Build configuration list for PBXNativeTarget "BuckarooBanzai" */;
+			buildPhases = (
+				41087AB37FE4D4A68D8AEE2AAAE56ACC /* Headers */,
+				99340DF2F03562E8E83B9B8D6F3C8E1D /* Sources */,
+				859F7B6AB8EA675726A5F89BFEC633A9 /* Frameworks */,
+				BFDC48A4A7B9202EB11506C5B9F02E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuckarooBanzai;
+			productName = BuckarooBanzai;
+			productReference = 1F8FEEE91BC8009516C1CC953DE04A90 /* BuckarooBanzai */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4B2FAF9959C80641944CD4EE69B505B /* CharacterViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7993B4578AD1B43CF05EE33B107C6672 /* Build configuration list for PBXNativeTarget "CharacterViewer" */;
+			buildPhases = (
+				BB2265F0A4C63A1ABBC577EBCF68CE81 /* Headers */,
+				BCD574DBF8A5E763388F80FC0E1B450A /* Sources */,
+				59074D1BF104E5FA00B08721BFE79948 /* Frameworks */,
+				207A7A072AD0D5ACBE9EC28FC75CD68E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78419DC2DF86903E013AE61DDBA6A52B /* PBXTargetDependency */,
+			);
+			name = CharacterViewer;
+			productName = CharacterViewer;
+			productReference = 78E08BF0769E4E7C6CD8CE087F04F118 /* CharacterViewer */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6776DFF4D158FC7D0B8D6B29EE126AA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				515F9B834A112BCA850AB763BFAD7B05 /* BuckarooBanzai */,
+				A4B2FAF9959C80641944CD4EE69B505B /* CharacterViewer */,
+				301C52C5FE4E6591F3ACED9314311F29 /* Pods-wireviewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		207A7A072AD0D5ACBE9EC28FC75CD68E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDC48A4A7B9202EB11506C5B9F02E91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44179D3618B78BE639CF8EF236EC338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138FAA837FC6C9331DD01F037B06A4A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51A548309948A3BBA5CE148C6318F5A /* Pods-wireviewer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99340DF2F03562E8E83B9B8D6F3C8E1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71EED7AE726ADDD5F35250318046782 /* BBError.swift in Sources */,
+				0A781FCFDD725B8A0CFA6351ACB04110 /* BuckarooBanzai.swift in Sources */,
+				DE83B6109BE0B95CF00998B2AF72CBBD /* BuckarooBanzai-dummy.m in Sources */,
+				609BED004A5C1DF65B6E12F3189001A3 /* FormRequestSerializer.swift in Sources */,
+				89304E45D39B96C6D82EF5B7EDF16DB6 /* HTTPAcceptType.swift in Sources */,
+				048C57B266DB3C358998061829E47E19 /* HTTPContentType.swift in Sources */,
+				E74911B83CB6B62B7382A35659284358 /* HTTPRequestMethod.swift in Sources */,
+				E098C4F224ADC23C331DE09FB12F46EC /* HTTPResponse.swift in Sources */,
+				DF669620718AF7892941B9A97601DCFC /* HTTPResponse+ext.swift in Sources */,
+				30558E1CFCB6F555845315C0F4F1733D /* JSONRequestSerializer.swift in Sources */,
+				EEF3719707D1035D4B284F29A1DEA8C0 /* RequestSerializer.swift in Sources */,
+				C87044155D13655844E16219F51D5656 /* Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD574DBF8A5E763388F80FC0E1B450A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D491DD68F2218C0358697FE7154F3EDA /* Character.swift in Sources */,
+				A444F17D0E933A2019F15C30DC6F959E /* CharacterDetailViewController.swift in Sources */,
+				25B44428939B343A0326360AE24CE5C3 /* CharacterDetailViewController.xib in Sources */,
+				650C7221B2BA3A74C5EDC788F3808FE6 /* CharacterListViewController.swift in Sources */,
+				D9D05FC18D46DFDDB50BB19EE6EA9FB5 /* CharacterListViewController.xib in Sources */,
+				FDAA6B157F4E73BAE00735FBD417DBCF /* CharacterResponse.swift in Sources */,
+				01AAB021C1D490DD15A2D667A8B6A5A8 /* CharacterService.swift in Sources */,
+				A6A41903682FD3E086E2A353D347146B /* CharacterViewer.swift in Sources */,
+				FADDD16F9A06DC5D8EF49AF3A3324EAE /* CharacterViewer-dummy.m in Sources */,
+				8A5B778046A9A29730BE7861DA68B0E1 /* SplitViewController.swift in Sources */,
+				46EFC27135C7A114399B93EC7B47E094 /* SplitViewController.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30F1901D4F0CA947A943EF57209DA183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CharacterViewer;
+			target = A4B2FAF9959C80641944CD4EE69B505B /* CharacterViewer */;
+			targetProxy = 45BA18378CD2EBF1ABF5F06DC27E4B02 /* PBXContainerItemProxy */;
+		};
+		78419DC2DF86903E013AE61DDBA6A52B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BuckarooBanzai;
+			target = 515F9B834A112BCA850AB763BFAD7B05 /* BuckarooBanzai */;
+			targetProxy = 4CB44007FD2F2EC02C215B711A377AED /* PBXContainerItemProxy */;
+		};
+		E13C69D31C08E0851504374189289FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BuckarooBanzai;
+			target = 515F9B834A112BCA850AB763BFAD7B05 /* BuckarooBanzai */;
+			targetProxy = 605E3533B66641BCDB0BA79A81073C81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CED68F0EBC9397540AA81B372B6454F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DCEE6E32F91502843302DB3784F1427 /* Pods-wireviewer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-wireviewer/Pods-wireviewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wireviewer/Pods-wireviewer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		377B019D80482C08B65685484D6439A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9E2E13F267922302D13A08A0324CE7 /* BuckarooBanzai.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BuckarooBanzai/BuckarooBanzai-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BuckarooBanzai/BuckarooBanzai-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BuckarooBanzai/BuckarooBanzai.modulemap";
+				PRODUCT_MODULE_NAME = BuckarooBanzai;
+				PRODUCT_NAME = BuckarooBanzai;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CCC4D7D69B4E48E2560EBD133690519B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F94EA0EE4C94E42ACB56C9506EA60BC /* BuckarooBanzai.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BuckarooBanzai/BuckarooBanzai-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BuckarooBanzai/BuckarooBanzai-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BuckarooBanzai/BuckarooBanzai.modulemap";
+				PRODUCT_MODULE_NAME = BuckarooBanzai;
+				PRODUCT_NAME = BuckarooBanzai;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9CD4D66D8708D4D8B4E81A4A5A0E422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CBAA63F5A1A17B0FBE389F29EAB913 /* Pods-wireviewer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-wireviewer/Pods-wireviewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wireviewer/Pods-wireviewer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8E59D2853C4ABFEF45818747E530228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A5B207B05110AF53C924DF60635B16 /* CharacterViewer.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CharacterViewer/CharacterViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CharacterViewer/CharacterViewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CharacterViewer/CharacterViewer.modulemap";
+				PRODUCT_MODULE_NAME = CharacterViewer;
+				PRODUCT_NAME = CharacterViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF652C6F590105A4409895B0C06E0C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AC32D8CF53972815400A7C3917F9D5 /* CharacterViewer.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CharacterViewer/CharacterViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CharacterViewer/CharacterViewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CharacterViewer/CharacterViewer.modulemap";
+				PRODUCT_MODULE_NAME = CharacterViewer;
+				PRODUCT_NAME = CharacterViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC095A689DE20BC21516DAD6087767C /* Build configuration list for PBXNativeTarget "BuckarooBanzai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377B019D80482C08B65685484D6439A8 /* Debug */,
+				CCC4D7D69B4E48E2560EBD133690519B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7993B4578AD1B43CF05EE33B107C6672 /* Build configuration list for PBXNativeTarget "CharacterViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E59D2853C4ABFEF45818747E530228 /* Debug */,
+				EF652C6F590105A4409895B0C06E0C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE417CD14EB0E2A4D7F28E1380A887C9 /* Build configuration list for PBXNativeTarget "Pods-wireviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9CD4D66D8708D4D8B4E81A4A5A0E422 /* Debug */,
+				2CED68F0EBC9397540AA81B372B6454F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

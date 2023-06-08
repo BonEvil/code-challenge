@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BuckarooBanzai.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CharacterViewer.framework

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterListViewController" customModule="CharacterViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="refreshButton" destination="arb-bk-T1k" id="AyY-U1-4j3"/>
+                <outlet property="searchBar" destination="gF7-rF-kRK" id="j30-qS-4VG"/>
+                <outlet property="tableView" destination="wIY-DJ-Dfs" id="3v6-UI-rTT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gF7-rF-kRK">
+                    <rect key="frame" x="0.0" y="103" width="393" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="b9D-Hf-adc"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wIY-DJ-Dfs">
+                    <rect key="frame" x="0.0" y="159" width="393" height="616"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arb-bk-T1k">
+                    <rect key="frame" x="16" y="783" width="361" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="refreshButton"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="sh0-7E-K7Q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wIY-DJ-Dfs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5wL-3N-zKw"/>
+                <constraint firstItem="gF7-rF-kRK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9SZ-ED-nsI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="arb-bk-T1k" secondAttribute="trailing" constant="16" id="9WW-9E-icV"/>
+                <constraint firstItem="arb-bk-T1k" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="MS4-V9-1yL"/>
+                <constraint firstItem="arb-bk-T1k" firstAttribute="top" secondItem="wIY-DJ-Dfs" secondAttribute="bottom" constant="8" symbolic="YES" id="NQB-y5-dCl"/>
+                <constraint firstItem="arb-bk-T1k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="OAd-lB-nO9"/>
+                <constraint firstItem="wIY-DJ-Dfs" firstAttribute="top" secondItem="gF7-rF-kRK" secondAttribute="bottom" id="cAk-L2-iNK"/>
+                <constraint firstItem="gF7-rF-kRK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fNE-0z-wC3"/>
+                <constraint firstItem="wIY-DJ-Dfs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="unu-fw-MED"/>
+                <constraint firstItem="gF7-rF-kRK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zSg-wx-AY4"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

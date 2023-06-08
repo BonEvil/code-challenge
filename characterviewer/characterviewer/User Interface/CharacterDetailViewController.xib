@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="CharacterViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="detailLabel" destination="Lug-N4-a64" id="joT-4p-10t"/>
+                <outlet property="imageView" destination="1OO-Lv-SqV" id="UEk-m8-GKI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1OO-Lv-SqV">
+                    <rect key="frame" x="16" y="92" width="382" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="750" constant="300" id="45n-fp-8dR"/>
+                        <constraint firstAttribute="height" priority="750" constant="300" id="fs4-hT-O9s"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="45n-fp-8dR"/>
+                            <exclude reference="fs4-hT-O9s"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="45n-fp-8dR"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="fs4-hT-O9s"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lug-N4-a64">
+                    <rect key="frame" x="16" y="400" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1OO-Lv-SqV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3MM-l9-ti4"/>
+                <constraint firstItem="Lug-N4-a64" firstAttribute="leading" secondItem="1OO-Lv-SqV" secondAttribute="trailing" constant="8" symbolic="YES" id="AVo-sl-ulg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lug-N4-a64" secondAttribute="trailing" constant="20" id="ENd-eW-U9K"/>
+                <constraint firstItem="Lug-N4-a64" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="EfS-v9-Xsn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1OO-Lv-SqV" secondAttribute="trailing" constant="16" id="KLl-01-7Pq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lug-N4-a64" secondAttribute="bottom" constant="8" id="LKF-FN-6e3"/>
+                <constraint firstItem="1OO-Lv-SqV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Qpg-PB-zsa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lug-N4-a64" secondAttribute="bottom" constant="8" id="RDa-Rh-F0e"/>
+                <constraint firstItem="Lug-N4-a64" firstAttribute="top" secondItem="1OO-Lv-SqV" secondAttribute="bottom" constant="8" symbolic="YES" id="Tf0-IK-7QZ"/>
+                <constraint firstItem="1OO-Lv-SqV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="XG9-e1-dsZ"/>
+                <constraint firstItem="Lug-N4-a64" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Y5i-hs-OpQ"/>
+                <constraint firstItem="1OO-Lv-SqV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gAZ-Z6-Rla"/>
+                <constraint firstItem="Lug-N4-a64" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="qxQ-fb-Yud"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lug-N4-a64" secondAttribute="trailing" constant="16" id="rgm-a5-zkn"/>
+                <constraint firstItem="1OO-Lv-SqV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wN1-21-hJf"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ENd-eW-U9K"/>
+                    <exclude reference="KLl-01-7Pq"/>
+                    <exclude reference="LKF-FN-6e3"/>
+                    <exclude reference="RDa-Rh-F0e"/>
+                    <exclude reference="rgm-a5-zkn"/>
+                    <exclude reference="3MM-l9-ti4"/>
+                    <exclude reference="Qpg-PB-zsa"/>
+                    <exclude reference="XG9-e1-dsZ"/>
+                    <exclude reference="gAZ-Z6-Rla"/>
+                    <exclude reference="wN1-21-hJf"/>
+                    <exclude reference="AVo-sl-ulg"/>
+                    <exclude reference="EfS-v9-Xsn"/>
+                    <exclude reference="Tf0-IK-7QZ"/>
+                    <exclude reference="Y5i-hs-OpQ"/>
+                    <exclude reference="qxQ-fb-Yud"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="ENd-eW-U9K"/>
+                    <include reference="LKF-FN-6e3"/>
+                    <include reference="3MM-l9-ti4"/>
+                    <include reference="XG9-e1-dsZ"/>
+                    <include reference="wN1-21-hJf"/>
+                    <include reference="AVo-sl-ulg"/>
+                    <include reference="Y5i-hs-OpQ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="KLl-01-7Pq"/>
+                    <include reference="RDa-Rh-F0e"/>
+                    <include reference="rgm-a5-zkn"/>
+                    <include reference="Qpg-PB-zsa"/>
+                    <include reference="gAZ-Z6-Rla"/>
+                    <include reference="Tf0-IK-7QZ"/>
+                    <include reference="qxQ-fb-Yud"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="125.82938388625591" y="-15.384615384615383"/>
+        </view>
+    </objects>
+</document>
