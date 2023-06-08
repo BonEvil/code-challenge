@@ -44,11 +44,23 @@ public class CharacterViewer {
             throw NSError(domain: errorDomain, code: -1, userInfo: [NSLocalizedDescriptionKey : "No CharacterViewerSettings were found."])
         }
         
-        
-        
         characterListViewController.title = settings.title
         characterListViewController.reloadAction = reloadAction
-        settings.hostNavigationController.viewControllers = [characterListViewController]
+        
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            settings.hostNavigationController.viewControllers = [characterListViewController]
+        } else {
+            let splitViewController = UISplitViewController(style: .doubleColumn)
+            splitViewController.modalPresentationStyle = .fullScreen
+            let detailViewController = CharacterDetailViewController()
+            characterListViewController.detailViewController = detailViewController
+            characterListViewController.hideAction = {
+                splitViewController.hide(.primary)
+            }
+            splitViewController.viewControllers = [characterListViewController, detailViewController]
+            splitViewController.show(.primary)
+            settings.hostNavigationController.topViewController?.present(splitViewController, animated: true)
+        }
     }
     
     func retrieveCharacterData(withURL characterDataURL: String) async throws {

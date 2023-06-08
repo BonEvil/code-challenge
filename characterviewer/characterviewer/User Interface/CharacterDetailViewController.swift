@@ -36,7 +36,15 @@ class CharacterDetailViewController: UIViewController {
         }
     }
     
-    var character: Character?
+    var character: Character? {
+        didSet {
+            if UIDevice.current.userInterfaceIdiom != .phone {
+                self.title = character?.name
+                self.detailLabel.text = character?.description
+                loadImage()
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -47,10 +55,12 @@ class CharacterDetailViewController: UIViewController {
     }
     
     private func loadImage() {
+        imageView.image = UIImage.init(systemName: "person.fill")
+        
         guard let character = character else {
             return
         }
-        print("\(character.imageURL)")
+
         let service = CharacterService(withDataURL: character.imageURL)
         Task {
             do {

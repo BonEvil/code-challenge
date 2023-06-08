@@ -55,6 +55,8 @@ class CharacterListViewController: UIViewController {
     }
 
     var reloadAction: (() -> Void)?
+    var hideAction: (() -> Void)?
+    var detailViewController: CharacterDetailViewController?
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         if refreshButton == sender {
@@ -85,10 +87,10 @@ extension CharacterListViewController: UISearchBarDelegate {
         
         var filtered = [Character]()
         
-        for i in 0..<self.characters.count {
-            if characters[i].name.lowercased().range(of: searchText.lowercased()) != nil ||
-                characters[i].description.lowercased().range(of: searchText.lowercased()) != nil {
-                filtered.append(characters[i])
+        for character in self.characters {
+            if character.name.lowercased().range(of: searchText.lowercased()) != nil ||
+                character.description.lowercased().range(of: searchText.lowercased()) != nil {
+                filtered.append(character)
             }
         }
         filteredCharacters = filtered
@@ -120,8 +122,15 @@ extension CharacterListViewController: UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = filteredCharacters[indexPath.row]
         
-        let detailView = CharacterDetailViewController()
-        detailView.character = character
-        self.navigationController?.pushViewController(detailView, animated: true)
+        if let detailViewController = self.detailViewController {
+            detailViewController.character = character
+            if UIDevice.current.orientation == .portrait || UIDevice.current.orientation == .portraitUpsideDown {
+                hideAction?()
+            }
+        } else {
+            let detailView = CharacterDetailViewController()
+            detailView.character = character
+            self.navigationController?.pushViewController(detailView, animated: true)
+        }
     }
 }
