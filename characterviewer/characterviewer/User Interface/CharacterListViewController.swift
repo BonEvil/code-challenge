@@ -109,9 +109,11 @@ extension CharacterListViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "CharacterCell"
-        var cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+        var cell: UITableViewCell
         if let reusableCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) {
             cell = reusableCell
+        } else {
+            cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
         }
         
         cell.textLabel?.text = filteredCharacters[indexPath.row].name
@@ -128,9 +130,9 @@ extension CharacterListViewController: UITableViewDataSource, UITableViewDelegat
                 hideAction?()
             }
         } else {
-            let detailView = CharacterDetailViewController()
-            detailView.character = character
-            self.navigationController?.pushViewController(detailView, animated: true)
+            let detailViewController = CharacterDetailViewController()
+            detailViewController.character = character
+            self.navigationController?.pushViewController(detailViewController, animated: true)
         }
     }
 }
