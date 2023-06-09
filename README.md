@@ -20,6 +20,6 @@ This dependency is pulled in as a development pod using Cocoapods. Since this is
 I use the term ‘3rd-party’ here somewhat loosely. This dependency is actually my own open-source project.
 
 #### BuckarooBanzai
-This is a networking layer that I created and have updated to use modern concurrency idioms. The documentations is not complete as I have only recently been able to start detailing its use. Feel free to look it over as well as part of how I design my projects.
+This is a networking layer that I created and have updated to use modern concurrency idioms. The documentation is not complete as I have only recently been able to start detailing its use. Feel free to look it over as well as part of how I design my projects.
 
 https://github.com/BonEvil/BuckarooBanzai
